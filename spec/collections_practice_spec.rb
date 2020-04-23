@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'collections practice' do
+describe 'collections practice' do 
 
   # Question 1
   describe '#sort_array_asc' do
