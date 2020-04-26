@@ -38,11 +38,48 @@ def kesha_maker(array)
   array.each do |i|
     i.split("")
     i[2] = "$"
-    new_word = i.join
-    new_array.push(new_word)
+#    new_word = i.join
+    new_array.push(i)
   end
   return new_array
 end  
+
+def find_a(array)
+  new_array = []
+  array.each do |w|
+    if w.start_with?("a")
+      new_array.push(w)
+    end
+  end
+  return new_array
+end
+
+def sum_array(array)
+  total = 0
+  array.each do |n|
+ #   puts "Old Total: #{total} + #{n}"
+    total = total + n
+ #    puts "New Total: #{total}"
+  end
   
+ # puts "Final #{total}"
+  return total
+end
+
+def add_s(array)
+  new_array = []
+  array.each do |i|
+    if i == "feet" 
+      new_array.push(i)
+    else
+    i.split("")
+#    i[2] = "$"
+#    new_word = i.join
+    i = i + "s"
+    new_array.push(i)
+  end
+end
+  return new_array
+end  
   
   
